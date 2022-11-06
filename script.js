@@ -1,6 +1,6 @@
 
 
-
+//kvadraticka funkce
 
 document.getElementById("myButton").onclick = function(){
 
@@ -49,6 +49,7 @@ if(dis<0){
 
 }
 
+// tricky s jmenem
 document.getElementById("myButton2").onclick = function(){
 
 
@@ -87,6 +88,8 @@ console.log(result2);
 
 }
 
+//rows and columns se jmenem noice
+
 document.getElementById("myButton3").onclick = function(){
  let number = document.getElementById("rocol").value;
  console.log(number);
@@ -115,6 +118,114 @@ document.getElementById("myButton3").onclick = function(){
 
  
 
+
+
+
+
+}
+
+
+// obdelnik
+document.getElementById("myButton4").onclick = function(){
+
+    let result ="";
+    let space = "";
+
+    
+
+    let number = document.getElementById("rocol2").value;
+    let name = document.getElementById("jmeno").value;
+
+
+    for(let i = 0; i<name.length+5; i++){
+        space += "&nbsp";
+
+}
+   console.log(space.length);
+        
+
+
+    for(let i = 0; i<number; i++){
+        for(let j = 0; j<number; j++){
+
+            if(i==0 || i==number-1){
+                result+=name+" ";
+
+
+            }else{
+                if(j==0 || j== number-1){
+                    result+=name+" ";
+                }else{
+
+                    result+= space+" ";
+
+                }
+
+               
+            }
+
+
+
+        }
+        result+="<br>"
+
+
+
+
+    }
+
+    document.getElementById("res3").innerHTML = result;
+
+
+}
+
+//random funkce
+function random(){
+    let min = document.getElementById("min").value;
+    let max = document.getElementById("max").value;
+
+    min = Number(min);
+    max = Number(max);
+
+    let bool = max>min;
+
+    if(!(bool)){
+        randExitCode();
+
+
+    }else{
+
+        getRandom(min,max);
+    }
+
+
+
+}
+
+// exit funkce pro random cislo
+
+function randExitCode(){
+
+document.getElementById("resultRand").innerHTML = "Max musí být větší než Min."
+
+
+
+
+
+}
+
+//funkce pro random cislo
+
+function getRandom(min,max){
+
+    let diff = max-min+1;
+    console.log(diff);
+
+    let rand = Math.random()*diff+min;
+    console.log(rand);
+    rand = Math.floor(rand);
+
+    document.getElementById("resultRand").innerHTML = "Random: "+rand;
 
 
 

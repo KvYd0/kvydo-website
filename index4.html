@@ -77,14 +77,57 @@
     </fieldset>
     <fieldset>
         <h1 class="fieldnadpis">Využití dvou for loopů</h1>
-        <label class="labeltext" for="name2">Jméno:</label>
+        <label class="label" for="name2">Jméno:</label>
         <input type="text" id="name2" name="name2"><br><br>
-        <label class="labeltext" for="rocol">Celé číslo od 3 do 10:</label>
+        <label class="label" for="rocol">Celé číslo od 3 do 10:</label>
         <input type="number" id="rocol" name="rocol"><br><br>
         <button type="button" id="myButton3">Vypočítat</button>
         <p class="labeltext" id="res2"></p>
 
         <script src="script.js"></script>
+    </fieldset>
+
+    <fieldset>
+        <h1 class="fieldnadpis">Použití if statementů a for loopu</h1>
+
+        <table style="margin-right:20px">
+        <tr><td><label class="label" for="jmeno">Jméno:</label></td>
+        <td><input type="text" id="jmeno" name="jmeno"></td></tr>
+        <tr><td><label class="label" for="rocol2">Celé číslo od 3 do 9:</label></td>
+           <td> <input type="number" id="rocol2" name="rocol2"><td></td></tr>
+           
+
+        </table>
+        <br>
+
+        <button type="button" id="myButton4">Vypočítat</button>
+        <br><br>
+        <div  style="text-align: center;"id="res3"></div>
+
+        <script src="script.js"></script>
+
+
+
+
+
+
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <h1 class="fieldnadpis">Náhodné číslo z intervalu</h1>
+                 
+        <table style="margin-right:20px">
+        <tr><td><label class="label" >Min: </label></td><td><input type="number" id="min"></td></tr>
+        <tr><td><label class="label" >Max: </label></td><td><input type="number" id="max"></td></tr>
+        </table>
+        <br>
+
+
+        <button type="button" onclick="random()">Vypočítat</button>
+        <p id="resultRand"></p>
     </fieldset>
 
 

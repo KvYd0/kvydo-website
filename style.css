@@ -136,7 +136,7 @@ border-style: solid;
 border-color: black;
 border-width: 5px;
 display: block;
-text-align: center;
+text-align: none;
 width: 55%;
 margin: auto;
 
@@ -164,7 +164,7 @@ margin-top: 30px
 
 }
 .fieldnadpis{
-font-size: 35px;
+font-size: 3vw;
 font-family: sans-serif;
 color: white;
 
@@ -177,6 +177,23 @@ color: white;
 
 
 
+
+
+}
+
+.label{
+
+    font-size: 1.3vw;
+font-family: sans-serif;
+color: white;
+     
+    
+
+}
+input{
+    margin-left: 0px;
+    padding-left: 0px;
+    
 
 
 }

@@ -74,7 +74,7 @@ margin-right: 5.5%;
 
 
 padding: 20px;
-color: white;
+color: black;
 position: absolute;
 display: block;
 margin-top: 85px;
@@ -88,7 +88,10 @@ width: 57vw;
 border-style: solid;
 border-color: white;
 border-width: 5px;
-font-size: 1vw;
+font-size: 1.5vw;
+font-family: sans-serif;
+font-weight: bolder;
+
 
 
 
@@ -186,6 +189,7 @@ color: white;
     font-size: 1.3vw;
 font-family: sans-serif;
 color: white;
+text-align: right;
      
     
 
@@ -194,6 +198,99 @@ input{
     margin-left: 0px;
     padding-left: 0px;
     
+}
 
 
+.centertable{
+
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.imggalerie{
+
+width: 18vw;
+margin: 40px;
+border-style: solid;
+border-color: black;
+border-width: 5px;
+filter: grayscale(100%);
+
+
+}
+.imggalerie:hover{
+    border-color: white;
+    filter: none;
+
+
+
+}
+
+.boxtext{
+
+    background-color: rgb(20, 134, 247);
+height: 300;
+border-style: solid;
+border-color: black;
+border-width: 5px;
+width: 65%;
+margin: auto;
+height: 18%;
+text-align: center;
+
+
+
+}
+.hobtext{
+    font-size: 30px;
+
+    font-family: 30px;
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
+    float: left;
+
+
+}
+
+iframe{
+width: 200px;
+height: 100px;
+float: right;
+margin: right;
+padding: 10px;
+
+
+}
+
+.hobbox{
+
+    background-color: rgb(20, 134, 247);
+height: 300;
+border-style: solid;
+border-color: black;
+border-width: 5px;
+width: 60%;
+margin: auto;
+height: 15%;
+text-align: center;
+padding: 20px;
+font-size: 30px;
+
+    
+    
+
+
+
+}
+
+video{
+
+    width: 30vw;
+    height: 17vw;
+    
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
 }

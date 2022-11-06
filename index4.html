@@ -20,8 +20,17 @@
     <a href="index2.html">
     <button class="btn">Galerie</button>
     </a>
-    <p class="text">Lorem ipsumlorem
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus error, et id voluptatibus ipsa dolorum. Iste vel, optio laborum possimus, eaque quas neque assumenda delectus aspernatur quis recusandae  dolor sit amet consectetur adipisicing elit. Odio, dignissimos quas, distinctio eum quis inventore animi vero iusto similique itaque recusandae tenetur, labore placeat unde omnis harum fugiat ut quae!</p>
+    <div class="text">
+        Kontakty:
+        <ul>
+            <li>Telefon: +420606633440</li>
+            <li>Mail: tomasszyszkowicz@email.cz</li>
+            <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100008629579395">Tomáš Szyszkowicz</a>
+
+            </li>
+        
+        </ul>
+    </div>
     <a href="https://www.vsb.cz/cs/"><img class="pic" src="img/logo.png"></a>
     <br>
     <a href="index3.html">
@@ -68,7 +77,7 @@
     <fieldset>
 
         <h1 class="fieldnadpis">Využití for loopu</h1>
-        <label class="labeltext" for="name">Jméno:</label>
+        <label class="labeltext" for="name">Jméno: </label>
         <input type="text"  id="name" name="name"><br><br>
         <button type="button" id="myButton2">Vypočítat</button>
         <p class="labeltext" id="res1"> </p>
@@ -77,10 +86,14 @@
     </fieldset>
     <fieldset>
         <h1 class="fieldnadpis">Využití dvou for loopů</h1>
-        <label class="label" for="name2">Jméno:</label>
+
+
+        <table>
+        <label class="label" for="name2">Jméno: </label>
         <input type="text" id="name2" name="name2"><br><br>
-        <label class="label" for="rocol">Celé číslo od 3 do 10:</label>
-        <input type="number" id="rocol" name="rocol"><br><br>
+        <label class="label" for="rocol">Celé číslo od 3 do 8: </label>
+        <input type="number" min="3" max="8"id="rocol" name="rocol"><br><br>
+    </table>
         <button type="button" id="myButton3">Vypočítat</button>
         <p class="labeltext" id="res2"></p>
 
@@ -90,14 +103,14 @@
     <fieldset>
         <h1 class="fieldnadpis">Použití if statementů a for loopu</h1>
 
-        <table style="margin-right:20px">
-        <tr><td><label class="label" for="jmeno">Jméno:</label></td>
-        <td><input type="text" id="jmeno" name="jmeno"></td></tr>
-        <tr><td><label class="label" for="rocol2">Celé číslo od 3 do 9:</label></td>
-           <td> <input type="number" id="rocol2" name="rocol2"><td></td></tr>
+        
+        <label class="label" for="jmeno">Jméno: </label><input type="text" id="jmeno" name="jmeno">
+        <br>
+        <br>
+        <label class="label" for="rocol2">Celé číslo od 3 do 8: </label> <input type="number" min="3" max="8" id="rocol2" name="rocol2">
            
 
-        </table>
+        <br>
         <br>
 
         <button type="button" id="myButton4">Vypočítat</button>
@@ -119,7 +132,7 @@
     <fieldset>
         <h1 class="fieldnadpis">Náhodné číslo z intervalu</h1>
                  
-        <table style="margin-right:20px">
+        <table class="centertable">
         <tr><td><label class="label" >Min: </label></td><td><input type="number" id="min"></td></tr>
         <tr><td><label class="label" >Max: </label></td><td><input type="number" id="max"></td></tr>
         </table>
